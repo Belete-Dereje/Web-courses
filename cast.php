@@ -31,5 +31,4 @@ if ($animal2 instanceof Dog) {
     $dog2 = $animal2; // Downcasting
     $dog2->fetch();   // Dog is fetching
 }
-
 ?>
