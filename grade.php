@@ -41,7 +41,7 @@ switch($Score){
     <form action="grade.php" method="post">
     <label for="name">Name:</label>
     <input type="text" name="name" ><br><br>
-    <label for="Grade">Score:</label>
+    <label for="Score">Score:</label>
     <input type="number" name="Score"><br>
     <input type="Submit" name="Submit">
     </form>
