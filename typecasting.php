@@ -1,0 +1,33 @@
+<?php
+
+// Original values
+$numberString = "25";
+$floatNumber = 10.75;
+$booleanValue = true;
+$text = "100 students";
+
+// 1. Cast string to integer
+$intValue = (int) $numberString;
+echo "String to Integer: " . $intValue . "<br>";
+
+// 2. Cast float to integer
+$intFromFloat = (int) $floatNumber;
+echo "Float to Integer: " . $intFromFloat . "<br>";
+
+// 3. Cast integer to float
+$floatValue = (float) $numberString;
+echo "Integer/String to Float: " . $floatValue . "<br>";
+
+// 4. Cast to boolean
+$boolValue = (bool) $numberString;
+echo "String to Boolean: " . $boolValue . "<br>";
+
+// 5. Cast to string
+$stringValue = (string) $floatNumber;
+echo "Float to String: " . $stringValue . "<br>";
+
+// 6. Cast string with text to integer
+$intFromText = (int) $text;
+echo "Text to Integer: " . $intFromText . "<br>";
+
+?>
