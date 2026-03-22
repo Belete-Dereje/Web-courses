@@ -42,18 +42,43 @@ $student = new Student();
 $student->showCity();
 
 
-class BankAccount {private $balance; 
-        public function __construct($initialBalance) {
-            $this->balance = $initialBalance; }
-        public function deposit($amount) {
-            if ($amount > 0) {
-                $this->balance += $amount; } }
-        public function getBalance() {
-            return $this->balance; } }
-    $account = new BankAccount(100);
-    $account->deposit(50);
-    echo $account->getBalance();
-    // echo $account->balance; // This would cause an error
+// class BankAccount {
+//   private $balance;
 
+//         public function __construct($initialBalance) {
+//             $this->balance = $initialBalance; 
+//         }
+
+//         public function deposit($amount) {
+//             if ($amount > 0) {
+//                 $this->balance += $amount; 
+//             } 
+//         }
+//         public function getBalance() {
+//             return $this->balance;
+//         } 
+//       }
+//     $account = new BankAccount(100);
+//     $account->deposit(50);
+//     echo $account->getBalance();
+//     // echo $account->balance; // This would cause an error
+
+    class bank{
+      private $balance;
+      function __construct($inibalance){
+        $this->balance=$inibalance;
+      }
+      function deposit($amount){
+        if($amount>0){
+          $this->balance+=$amount;
+        }
+      }
+      function getbalance(){
+        echo "$this->balance";
+      }
+    }
+    $b1=new bank(1000);
+    $b1->deposit(10000);
+    $b1->getbalance();
 
 ?>
