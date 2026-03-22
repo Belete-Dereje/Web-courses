@@ -11,7 +11,11 @@
   }
 
   $age = array("Peter"=>35, "Ben"=>37, "Joe"=>43);
-  echo "Peter is " . $age['Peter'] . " years old.";
-  echo "Ben is " . $age['Ben']. " years old.";
-  echo "Joe is " . $age['Joe‟] . " years old.";
+  echo "<br>Peter is " . $age["Peter"] . " years old.";
+  echo "<br>Ben is " . $age['Ben']. " years old.";
+  echo "<br>Joe is " . $age['Joe'] . " years old.";
+  $age['Alex'] = 30;
+  foreach($age as $name=>$ag){
+    echo "<br>$name =>$ag";
+  }
 ?>
