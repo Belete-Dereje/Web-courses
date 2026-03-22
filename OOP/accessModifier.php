@@ -32,7 +32,6 @@ echo "<br>";
 // Accessing public property (allowed)
 echo "Access public property: " . $person->name . "<br>";
 
-// These would cause errors if uncommented
 // echo $person->age;   // private cannot be accessed outside
 // echo $person->city;  //protected cannot be accessed outside
 
@@ -41,5 +40,20 @@ echo "<br>";
 // Child class object
 $student = new Student();
 $student->showCity();
+
+
+class BankAccount {private $balance; 
+        public function __construct($initialBalance) {
+            $this->balance = $initialBalance; }
+        public function deposit($amount) {
+            if ($amount > 0) {
+                $this->balance += $amount; } }
+        public function getBalance() {
+            return $this->balance; } }
+    $account = new BankAccount(100);
+    $account->deposit(50);
+    echo $account->getBalance();
+    // echo $account->balance; // This would cause an error
+
 
 ?>
