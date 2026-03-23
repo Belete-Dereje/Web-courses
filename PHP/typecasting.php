@@ -32,7 +32,6 @@ echo "Text to Integer: " . $intFromText . "<br>";
 
 
 //PERMANENT
-// Original variable
 $value = "50";
 
 echo "Original value: " . $value . "<br>";
