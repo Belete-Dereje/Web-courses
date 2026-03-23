@@ -18,7 +18,7 @@ echo "strtoupper(): " . strtoupper($text) . "<br>";
 echo "strtolower(): " . strtolower($text) . "<br>";
 
 // 6. First letter uppercase
-echo "ucfirst(): " . ucfirst("hello") . "<br>";
+echo "ucfirst(): " . ucfirst("hello world") . "<br>";
 
 // 7. First letter of each word uppercase
 echo "ucwords(): " . ucwords("hello world") . "<br>";
